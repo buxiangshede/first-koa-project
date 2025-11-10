@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>first-koa-project guide</title>
+    <style>
+      body { font-family: sans-serif; margin: 2rem auto; max-width: 720px; line-height: 1.5; }
+      code { background: #f4f4f4; padding: 0.1rem 0.3rem; border-radius: 3px; }
+    </style>
+  </head>
+  <body>
+    <h1>first-koa-project</h1>
+    <p>This mini app showcases common Koa patterns: custom middleware, routing, JSON parsing, and static files.</p>
+    <h2>Available routes</h2>
+    <ul>
+      <li><code>/</code> overview response</li>
+      <li><code>/health</code> heartbeat</li>
+      <li><code>/features</code> list of highlighted Koa concepts</li>
+      <li><code>/users</code> list and POST new users (body: <code>{"name":"","role":""}</code>)</li>
+      <li><code>/users/:id</code> fetch a single user</li>
+      <li><code>/users/:id/preferences</code> update arbitrary preferences</li>
+      <li><code>/echo?name=Koa</code> inspect query parameters</li>
+      <li><code>/slow</code> demonstrates async work inside middleware</li>
+    </ul>
+    <p>Happy hacking!</p>
+  </body>
+</html>
